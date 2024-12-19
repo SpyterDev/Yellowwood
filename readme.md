@@ -2,6 +2,11 @@
 # What is Yellowwood
 Yellowwood is a small and lightweight library created by a C noob to load SpriteFusion map.json files into C. This library was built on top of the cJSON library which is a really good library for json parsing in C, it wouldn't be possible without it.
 
+# Example
+```
+WORLDTilemap map = CreateTilemap("example.json");
+```
+
 # License
 
 Yellowwood's License
