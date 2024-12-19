@@ -4,7 +4,7 @@ Yellowwood is a small and lightweight library created by a C noob to load Sprite
 
 # Example
 ```
-WORLDTilemap map = CreateTilemap("example.json");
+WORLDTilemap * map = CreateTilemap("example.json");
 ```
 
 # License
