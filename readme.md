@@ -11,11 +11,11 @@ WORLDTilemap * map = CreateTilemap("example.json");
 // NOTE This returns the tile's id + 1
 // So you can tell the difference between a blank tile and the first tile in a spritesheet
 
-printf("%u\n, AccessPositionInLayer((x position), (y position), map -> layers + (whatever layer you want, i.e 0 for 1st layer)));
+printf("%u\n, AccessPositionInLayer((x position), (y position), map -> layers + (whatever layer you want, i.e. 0 for 1st layer)));
 
 // Printing a layer
 
-PrintLayer(map -> layers + (whatever layer you want, i.e 0 for 1st layer)
+PrintLayer(map -> layers + (whatever layer you want, i.e. 0 for 1st layer)
 ```
 
 # License
