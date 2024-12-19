@@ -4,7 +4,18 @@ Yellowwood is a small and lightweight library created by a C noob to load Sprite
 
 # Example
 ```
+// Loading a tilemap
 WORLDTilemap * map = CreateTilemap("example.json");
+
+// Printing a random tile from a layer, 
+// NOTE This returns the tile's id + 1
+// So you can tell the difference between a blank tile and the first tile in a spritesheet
+
+printf("%u\n, AccessPositionInLayer((x position), (y position), map -> layers + (whatever layer you want, i.e 0 for 1st layer)));
+
+// Printing a layer
+
+PrintLayer(map -> layers + (whatever layer you want, i.e 0 for 1st layer)
 ```
 
 # License
