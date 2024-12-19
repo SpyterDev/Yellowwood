@@ -70,6 +70,18 @@ void ErrorEncountered(enum ErrorIDs id)
     EncounterError = 1;
 }
 
+// Access a position in a WORLDTilemapLayer and returns a WORLDTile
+WORLDTile AccessPositionInLayer(uint16_t x, uint16_t y, WORLDTilemapLayer * layer)
+{
+    x -= layer -> offsetX;
+    y -= layer -> offsetY;
+    if (x >= layer -> sizeX || y >= layer -> sizeY) return 0;
+
+    register WORLDTile (*tiles)[layer -> sizeY][layer -> sizeX] = layer -> tiles;
+    
+    return (*tiles)[y][x];
+}
+
 // Returns 1 if the base string starts with the substring. I.E base = "Hi There\0", substring = "Hi\0", result = 1
 uint8_t strstcmp(register const char * base, register const char * substring) {
     register uint64_t i = 0;
@@ -384,3 +396,4 @@ WORLDTilemap * CreateTilemap(const char * jsonPath)
     }
     return tilemap;
 }
+

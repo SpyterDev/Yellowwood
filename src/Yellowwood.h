@@ -68,3 +68,6 @@ extern WORLDTilemap * CreateTilemap(const char * jsonPath);
 
 // Prints a tilemap_layer (for debugging)
 extern void PrintLayer(WORLDTilemapLayer * layer);
+
+// Access a position in a WORLDTilemapLayer and returns a WORLDTile
+extern WORLDTile AccessPositionInLayer(uint16_t x, uint16_t y, WORLDTilemapLayer * layer);
