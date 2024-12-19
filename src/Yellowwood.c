@@ -23,7 +23,7 @@
 */
 
 #include "../Lib/cJSON.h"
-#include "SpriteFusion_json_converter.h"
+#include "Yellowwood.h"
 #include <stdlib.h>
 #include <memory.h>
 #include <stdint.h>
